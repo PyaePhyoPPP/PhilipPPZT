@@ -1,0 +1,258 @@
+/* Header */
+header img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+header .nav a {
+    text-decoration: none;
+    color:black;
+    margin-left: 30px;
+}
+header .nav ul {
+        display: flex;
+        list-style: none; 
+}
+body {
+    margin: 0;
+}
+
+/* Banner */
+#Banner {
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 200px 0 200px 0; }
+#banner h1 {
+    font-size: 48px;
+}
+
+#banner p{
+   margin: 30px 0 30px 0;
+}
+#banner .about{
+    background-color:green;
+    color:aliceblue;
+    text-decoration: none;
+    border: 2px solid pink;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+}
+#banner .about:hover {
+    background-color:yellowgreen;
+}
+
+/* About ME */
+#about-me {
+    background-color: aliceblue;
+    padding: 50px 20px 50px 20px;
+}
+#about-me .title {
+    text-align: center;
+}
+.about-container .get-to-know,
+.about-container .skills {
+    width: 48%;
+}
+/* About-container */
+.about-container h3{
+    font-size: 48px;
+}
+.about-container{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.project-button:hover {
+    background-color: yellowgreen;
+} 
+.project-button {
+    background-color:green;
+    color:aliceblue;
+    text-decoration: none;
+    border: 2px solid pink;
+    padding: 10px 20px 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.get-to-know p{
+    text-align: justify;
+    line-height: 28px;}
+
+.skill-list span {
+    background: linear-gradient(45deg, green, yellowgreen);
+    color: white;
+    padding: 50px;
+    display:inline-block;
+    margin: 0 10px 0 10px;
+    border-radius: 50px;
+}
+.skill-list {
+    display:flex;
+    flex-wrap: wrap;
+}
+/* Project */
+#project .title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#project img { 
+    width: 100%;
+}
+.project1-container div{
+width: 50%;
+}
+.project1-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: cneter;
+}
+#project {
+    padding: 50px 20px 50px 20px;
+}
+.project1-container p{
+    line-height: 28px;
+}
+
+
+#project .title2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#project img { 
+    width: 100%;
+}
+.project2-container div{
+width: 50%;
+}
+.project2-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: cneter;
+}
+#project2 {
+    padding: 50px 20px 50px 20px;
+}
+.project2-container p{
+    line-height: 28px;
+}
+
+
+#project .title3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#project img { 
+    width: 100%;
+}
+.project3-container div{
+width: 50%;
+}
+.project3-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: cneter;
+}
+#project3 {
+    padding: 50px 20px 50px 20px;
+}
+.project3-container p{
+    line-height: 28px;
+}
+
+/* Footer */
+footer {
+    background-color: green;
+    padding: 40px 30px 0 30px;
+}
+footer h4 { 
+    text-align: center;
+    color:white;
+    margin: 5px;
+}
+footer .social-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+footer .social-container img{
+    width:50px;
+    heigth:50px;
+    background-color: yellowgreen;
+    border-radius: 30px;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 10px;
+}
+footer p {
+    text-align: center;
+    color:white;
+}
+.copyright {
+    padding: 20px;
+    border-top: 1px solid white;
+}
+
+ 
+@media only screen and (max-width:620px){
+    header {
+        flex-direction: column;
+    }
+    header .logo{
+        justify-content: center;
+    }
+    header .nav ul{
+        padding: 0;
+        justify-content: center;
+    }
+    header .nav a{
+      margin: 0 15px;
+    }
+    /* Banner */
+#banner{
+    padding: 100px 0;
+}
+#banner h1{
+    font-size:32px;
+}
+/* About Me */
+.about-container .get-to-know,
+.about-container .skills {
+    width: 100%;
+}
+.about-container {
+    flex-wrap: wrap;
+}
+
+/* Project */
+.project1-container,
+.project2-container,
+.project3-container{
+    flex-wrap: wrap;
+}
+.project1-container div,
+.project2-container div,
+.project3-container div{
+   width: 100%;
+}
+}
+
